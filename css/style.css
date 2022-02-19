@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Redressed', cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 127px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Redressed', cursive;
+}
+#board{
+    background: linear-gradient(#c1ff5d,#bfbfa7);
+    width: 100vmin;
+    height: 90vmin;
+    margin-right: 100px;
+    border:2px solid black;
+    border-radius: 14px;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(red, yellow);
+    border: 2px solid red;
+    border-radius: 12px;
+    transform: scale(1.02);
+}
+.snake{
+    background-color: rgb(4, 4, 66);
+    border: 0.25vmin solid white;
+    border-radius: 24px;
+}
+.food{
+    background: linear-gradient(red, yellow);
+    border: 0.25vmin solid black;
+    border-radius: 24px;
+}
